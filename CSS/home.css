@@ -319,6 +319,7 @@ body{
         text-align: center;
         position: relative;
         margin-top: 40px;
+        padding-top: 30px;
     }
 }
    
@@ -328,6 +329,7 @@ body{
         text-align: center;
         position: relative;
         margin-top: 40px;
+        padding-top: 40px;
     }
 }
 
@@ -548,7 +550,18 @@ ul.custom-list {
     .experience-badge{
         width: 130px;
     }
+
+    .leftcol{
+        margin-left: 40px;
+    }
 }
+
+@media(max-width:768px){
+    .leftcol{
+        margin-left: 70px;
+    }
+}
+
 
 
 /* View Menu Start  */

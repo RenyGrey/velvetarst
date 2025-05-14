@@ -191,6 +191,7 @@ body{
         margin-top: 40px;
         background-color: #0E2C2B;
         border-radius: 10px;
+        z-index: 0;
     }
 
     ul li{
@@ -207,6 +208,7 @@ body{
         margin-top: 40px;
         background-color: #0E2C2B;
         border-radius: 10px;
+        z-index: 0;
     }
 
     ul li{
@@ -223,6 +225,7 @@ body{
         margin-top: 40px;
         /* background-color: #0E2C2B; */
         border-radius: 10px;
+        z-index: 0;
     }
 
     ul li{
@@ -296,7 +299,7 @@ body{
 /* <!-- Welcome Section Start  --> */
 .welcome-container {
     text-align: center;
-    position: relative;
+    position: absolute;
     margin-top: 150px;
 }
 
@@ -343,16 +346,19 @@ body{
     .welcome-container {
         text-align: center;
         position: relative;
+        z-index: 1;
     }
-};
+}
    
 
 @media(max-width:768px){
     .welcome-container {
         text-align: center;
-        position: relative;
-        margin-top: 80px;
-        padding-top: 80px;
+        /* position: relative; */
+        /* margin-top: 80px;
+        padding-top: 80px; */
+        z-index: 1;
+
     }
 }
 
@@ -361,6 +367,7 @@ body{
         text-align: center;
         position: relative;
         margin-top: 80px;
+        z-index: 1;
     }
 }
 /* Welcome section media end  */
@@ -438,9 +445,6 @@ body{
     margin-top: 20px;
 }
 
-/* .ourstory_btn:hover{
-   
-} */
 
 .ourstory_img1{
     border-radius: 20px;
@@ -473,3 +477,118 @@ body{
     };
 };
 /* Our Story Media end  */
+
+/* about start  */
+
+.arched-image{
+    overflow: hidden;
+    position: relative;
+} 
+
+.leftcol_img{
+    width: 300px;
+    height: 600px;
+    border-radius: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.experience-badge {
+    background-color: #A87C4F;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    width: 180px;
+    position: absolute;
+    top: 20%;
+    left: 350px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    z-index: 2;
+}
+.btn-custom {
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.rightcol_text{
+    color: #ffffff;
+    font-family: "Lora";
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.rightcol_p{
+    font-family: "Roboto";
+    color: #ccc;
+}
+
+ul.custom-list {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+}
+
+/* About End  */
+
+/* About Media start  */
+@media(max-width:576px){
+    .leftcol_img{
+        width: 500px !important;
+        height: 700px;
+    }
+}
+
+@media(max-width:768px){
+    .leftcol_img{
+        width: 500px !important;
+        height: 700px;
+        margin-left: 100px;
+    }
+
+    .experience-badge{
+        top: 20%;
+        left: 500px;
+    }
+}
+/* About media end  */
+
+/* About Details start */
+
+.abtdetail_h5{
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+.abtdetail_p{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.abtdetail_img{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border: 2px solid #A87C4F;
+    border-radius: 50%;
+}
+
+.abtdeatil_container{
+    margin-top: 30px;
+}
+
+/* About details end  */
